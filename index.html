@@ -169,7 +169,7 @@
 
     // --- Provider: SS Activewear (REST) -------------------------------------
     async function searchSSAW({ q, brand, color, pageSize }) {
-      const url = new URL(CONFIG.ENDPOINTS.ssaw, CONFIG.BASE_URL);
+      const url = new URL(CONFIG.ENDPOINTS.ssaw, 'https://upgraded-palm-tree-sepia.vercel.app/');
       if (q) url.searchParams.set('q', q);
       if (brand) url.searchParams.set('brand', brand);
       if (color) url.searchParams.set('color', color);
